@@ -15,7 +15,6 @@ class LoadingWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 16.h),
-            // Header Text shimmer
             Shimmer.fromColors(
               baseColor: Colors.grey[300]!,
               highlightColor: Colors.grey[100]!,
@@ -30,8 +29,6 @@ class LoadingWidget extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16.h),
-
-            // Featured movie shimmer
             Shimmer.fromColors(
               baseColor: Colors.grey[300]!,
               highlightColor: Colors.grey[100]!,
@@ -46,8 +43,6 @@ class LoadingWidget extends StatelessWidget {
               ),
             ),
             SizedBox(height: 24.h),
-
-            // Section title shimmer
             Shimmer.fromColors(
               baseColor: Colors.grey[300]!,
               highlightColor: Colors.grey[100]!,
@@ -62,13 +57,18 @@ class LoadingWidget extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16.h),
-
-            // Movie cards shimmer
-            for (int i = 0; i < 3; i++)
-              Padding(
-                padding: EdgeInsets.only(bottom: 16.h),
-                child: _buildShimmerMovieCard(),
-              ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 16.h),
+              child: _buildShimmerMovieCard(),
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 16.h),
+              child: _buildShimmerMovieCard(),
+            ),
+            Padding(
+              padding: EdgeInsets.only(bottom: 16.h),
+              child: _buildShimmerMovieCard(),
+            ),
           ],
         ),
       ),

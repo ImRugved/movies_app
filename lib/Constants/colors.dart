@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // Primary colors
-  static const Color primaryDark =
-      Color.fromARGB(255, 3, 37, 65); // Approximating to a deep blue
+  static const Color primaryDark = Color.fromARGB(255, 3, 37, 65);
   static const Color primaryBlue = Colors.lightBlue;
   static const Color accentRed = Colors.red;
 
@@ -28,11 +27,6 @@ class AppColors {
 
   // Grey color - use with opacity
   static const Color grey = Colors.grey;
-
-  // Common grey opacities for reference
-  // Light grey: grey.withOpacity(0.1) or grey.withOpacity(0.2)
-  // Medium grey: grey.withOpacity(0.5)
-  // Dark grey: grey.withOpacity(0.8) or grey.withOpacity(0.7)
 
   // Shadow colors
   static final Color shadowColor = Colors.black.withOpacity(0.1);

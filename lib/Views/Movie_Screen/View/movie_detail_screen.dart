@@ -56,7 +56,6 @@ class MovieDetailScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Hero image with gradient overlay
               Stack(
                 children: [
                   Hero(
@@ -92,7 +91,6 @@ class MovieDetailScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  // Gradient overlay for better visibility
                   Positioned.fill(
                     child: Container(
                       decoration: BoxDecoration(
@@ -108,7 +106,6 @@ class MovieDetailScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-
                   Positioned(
                     bottom: 0,
                     left: 0,
@@ -174,7 +171,6 @@ class MovieDetailScreen extends StatelessWidget {
                   ),
                 ],
               ),
-
               Padding(
                 padding: EdgeInsets.all(16.r),
                 child: Column(
@@ -222,7 +218,6 @@ class MovieDetailScreen extends StatelessWidget {
                       ),
                     ),
 
-                    // Overview section
                     Text(
                       'Overview',
                       style: TextStyle(
@@ -256,7 +251,6 @@ class MovieDetailScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 24.h),
 
-                    // Cast section
                     if (movie.casts != null && movie.casts!.isNotEmpty) ...[
                       Text(
                         'Cast',
